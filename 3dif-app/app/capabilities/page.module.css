@@ -1,0 +1,37 @@
+.bigD {
+    color: #C5B358;
+    font-size: 30px;
+}
+
+.clientImage {
+    height: 24px;
+    width: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+    float:left;
+}
+
+.capabilitiesBottom {
+    display: block;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #444;
+    margin: 60px auto;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.2em;
+    color: #002060;
+    border-radius: 0.5rem;
+}
+
+.capabilitiesBottomImage {
+    width: 15%;
+    max-width: 110px;
+    height: auto;
+}
+
+.capabilitiesBottomImageLast {
+    width: 20%;
+    max-width: 150px;
+}

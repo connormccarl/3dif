@@ -1,0 +1,26 @@
+.perfTable {
+    width: 100%;
+    max-width: 800px;
+    border-spacing: 10px;
+    border-collapse: separate;
+    margin: 0 auto;
+}
+
+.perfTable .perfInner {
+    display: block;
+    min-height: 40px;
+    text-align: center;
+}
+
+.perfTable th {
+    background-color: #002060;
+    color: #ccc;
+}
+.perfTable th, .perfTable td {
+    padding: 10px 20px;
+}
+
+.perfTable td {
+    background-color: rgb(142, 170, 219);
+    color: #000;
+}
