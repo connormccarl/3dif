@@ -20,6 +20,12 @@
     padding: 10px 20px;
 }
 
+@media (max-width: 640px){
+    .perfTable th, .perfTable td {
+        padding: 0px;
+    }
+}
+
 .perfTable td {
     background-color: rgb(142, 170, 219);
     color: #000;

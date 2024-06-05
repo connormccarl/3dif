@@ -1,25 +1,18 @@
 import React from 'react'
-import { Container, SimpleGrid } from '@mantine/core'
 
 import styles from './page.module.css'
 
 export default function pastandpresentperformance() {
   return (
-    <Layout>
-        <Container>
-            <SimpleGrid cols={3}>
-                <div className={styles.perfInner}>Past Performance<br/>Prime — 541611</div>
-                <div className={styles.perfInner}>Current Performance<br/>Subcontractor - 561110</div>
-                <div className={styles.perfInner}>Current Performance<br/>Subcontractor - 541612</div>
-
-            </SimpleGrid>
-        <table className={styles.perfTable}>
-            <tbody>
+    <table className={`${styles.perfTable} table-fixed text-wrap`}>
+        <thead>
             <tr>
-                <th></th>
-                <th></th>
-                <th></th>
+                <th><div className={styles.perfInner}>Past Performance<br/>Prime — 541611</div></th>
+                <th><div className={styles.perfInner}>Current Performance<br/>Subcontractor - 561110</div></th>
+                <th><div className={styles.perfInner}>Current Performance<br/>Subcontractor - 541612</div></th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td><div className={styles.perfInner}><b>Administrative &amp; Back Oﬃce Support Services</b></div></td>
                 <td><div className={styles.perfInner}><b>Technical Services PEER Review</b></div></td>
@@ -50,9 +43,7 @@ export default function pastandpresentperformance() {
                 <td><div className={styles.perfInner}>Quality Control &amp; Review</div></td>
                 <td><div className={styles.perfInner}>Workflow &amp; Desktop Aides Procedure Project</div></td>
             </tr>	
-            </tbody>
-        </table>
-        </Container>
-    </Layout>
+        </tbody>
+    </table>
   )
 }

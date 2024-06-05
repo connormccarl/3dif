@@ -5,7 +5,7 @@ import styles from './page.module.css';
 
 export default function capabilities() {
   return (
-    <div className='container max-w-screen-lg mx-auto'>
+    <div className=''>
         <div className='bg-[#002060] h-28 mt-1 rounded-lg'>
             <span className='float-left'>
                 <Image src="/3DiF-RightTri.png" alt="" width={310} height={115} />
