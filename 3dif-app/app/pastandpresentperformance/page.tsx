@@ -2,9 +2,9 @@ import React from 'react'
 
 import styles from './page.module.css'
 
-export default function pastandpresentperformance() {
+export default function PastandPresentPerformance() {
   return (
-    <table className={`${styles.perfTable} table-fixed text-wrap`}>
+    <table className={`${styles.perfTable} table-fixed text-wrap pt-3`}>
         <thead>
             <tr>
                 <th><div className={styles.perfInner}>Past Performance<br/>Prime — 541611</div></th>

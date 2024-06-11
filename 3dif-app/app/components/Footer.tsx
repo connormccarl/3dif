@@ -31,11 +31,11 @@ const Footer = () => {
                 <h4 className="font-semibold uppercase">Useful Links</h4>
 
                 <div className="mt-3 grid space-y-3 text-neutral-400 text-base">
-                    <p><Link className="inline-flex gap-x-2 hover:text-white" href="#">Site Map</Link></p>
-                    <p><Link className="inline-flex gap-x-2 hover:text-white" href="#">Privacy Policy</Link></p>
-                    <p><Link className="inline-flex gap-x-2 hover:text-white" href="#">Terms of Use</Link></p>
-                    <p><Link className="inline-flex gap-x-2 hover:text-white" href="#">Community Support</Link></p>
-                    <p><Link className="inline-flex gap-x-2 hover:text-white" href="#">Assessment</Link></p>
+                    <p><Link className="inline-flex gap-x-2 hover:text-white" href="/sitemap">Site Map</Link></p>
+                    <p><Link className="inline-flex gap-x-2 hover:text-white" href="/privacypolicy">Privacy Policy</Link></p>
+                    <p><Link className="inline-flex gap-x-2 hover:text-white" href="/termsofuse">Terms of Use</Link></p>
+                    <p><Link className="inline-flex gap-x-2 hover:text-white" href="/communitysupport">Community Support</Link></p>
+                    <p><Link className="inline-flex gap-x-2 hover:text-white" href="https://surveyresearch.co1.qualtrics.com/jfe/form/SV_6R9vY9BmsKlbIr3">Assessment</Link></p>
                 </div>
             </div>
         </div>

@@ -50,26 +50,26 @@ const MenuBar = () => {
 
                             <div className="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 hidden z-10 top-auto end-0 sm:w-72 bg-[#002060] sm:shadow-md rounded-lg py-2 sm:px-2">
                                 <div className="flex flex-col">
-                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 sm:ps-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/">
+                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 sm:ps-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/whatwedo">
                                         What We Do
                                     </Link>
-                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 sm:ps-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/aboutus">
+                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 sm:ps-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/capabilities">
                                         Capabilities Statement
                                     </Link>
-                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 sm:ps-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/employeewall">
+                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 sm:ps-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/pastandpresentperformance">
                                         Past & Present Performance
                                     </Link>
-                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 sm:ps-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/employeewall">
+                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 sm:ps-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/clients">
                                         Our Clients
                                     </Link>
-                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/employeewall">
+                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 sm:ps-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/communitysupport">
                                         Communities We Support
                                     </Link>
                                 </div>
                             </div>
                         </div>
                         <div className='[--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]'>
-                            <Link className="flex items-center p-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/">
+                            <Link className="flex items-center p-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/contactus">
                                 Contact Us
                             </Link>
                         </div>

@@ -3,15 +3,15 @@ import Image from 'next/image';
 
 import styles from './page.module.css';
 
-export default function capabilities() {
+export default function Capabilities() {
   return (
     <div className=''>
-        <div className='bg-[#002060] h-28 mt-1 rounded-lg'>
-            <span className='float-left'>
-                <Image src="/3DiF-RightTri.png" alt="" width={310} height={115} />
+        <div className='bg-[#002060] md:h-28 mt-1 rounded-lg h-[40px]'>
+            <span className='float-left h-full'>
+                <Image src="/3DiF-RightTri.png" alt="" width={310} height={115} className='h-full w-auto' />
             </span>
-            <div className='pt-1'>
-                <div className='flex flex-row float-start gap-2'>
+            <div className='md:pt-1'>
+                <div className='flex-row float-start gap-2 hidden md:flex'>
                         <Image src="/certs/SDB_Self_Certified.png" alt="" width={75} height={40} />
                         <Image src="/certs/HUBZone_Certified.png" alt="" width={75} height={90}  />
                         <Image src="/certs/8a_Certified.png" alt="" width={75} height={90}  />
@@ -21,18 +21,20 @@ export default function capabilities() {
                 <div className='float-end text-white text-sm pr-2'>
                     <p>CAGE Code: 6E8B8<br />
                         D&amp;B: 968291000<br />
-                        www.3dif.co<br />
-                        info@3dif.co
+                        <span className='hidden md:block'>
+                            www.3dif.co<br />
+                            info@3dif.co
+                        </span>
                     </p>
                 </div>
             </div>
         </div>
-        <div className='w-full grid grid-cols-12 -mt-2'>
-            <div className="col-span-3">
+        <div className='w-full grid grid-cols-1 md:grid-cols-12 -mt-2'>
+            <div className="md:col-span-3">
                 <p><span className={styles.bigD}>D</span>epth | <span className={styles.bigD}>D</span>iligence | <span className={styles.bigD}>D</span>evotion</p>
             </div>
-            <div className="col-span-9">
-                <div className="flex justify-center"><i><span className={styles.bigD}>&nbsp;</span>Dedicated to Serving our Federal, Civilian, &amp; Commercial Customers since 2016</i></div>
+            <div className="md:col-span-9 -mt-2 md:-mt-1">
+                <div className="flex justify-center text-center"><i><span className={styles.bigD}>&nbsp;</span>Dedicated to Serving our Federal, Civilian, &amp; Commercial Customers since 2016</i></div>
             </div>
         </div>
         <div className=''>
@@ -153,7 +155,11 @@ export default function capabilities() {
                     </ul>
                 </div>
             </div>
-            <p className='mt-2 flex justify-center'><b>A team is not a div of people who work together. A team is a div of people who trust each other.</b> - <i>Simon Sinek</i></p>
+            <span className='mt-2 flex justify-center text-center'>
+                <span>
+                    <b>A team is not a div of people who work together. A team is a div of people who trust each other.</b> - <i>Simon Sinek</i>
+                </span>
+            </span>
         </div>
         <div className={styles.capabilitiesBottom}>
             <div className='flex justify-center'><Image src="/3dif-big.jpg" alt="" width={550} height={50}  /></div>
