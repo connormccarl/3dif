@@ -2,7 +2,7 @@ import React from 'react'
 
 const TermsOfUse = () => {
   return (
-    <div>
+    <main>
         <div className='flex justify-center'>
             <p className='pageTitle mb-5'>3DiF Terms of Use</p>
         </div>
@@ -23,7 +23,7 @@ const TermsOfUse = () => {
             User agrees to defend, indemnify, and hold harmless 3DiF, its employees and affiliates and their respective directors, officers, employees and agents from and against all claims and expenses, including attorneys&apos; fees, arising out of the unauthorized use of 3DiF&apos;s website by or on behalf of the User.
             <p></p>
         </div>
-    </div>
+    </main>
   )
 }
 

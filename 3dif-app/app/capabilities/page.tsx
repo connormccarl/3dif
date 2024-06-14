@@ -5,18 +5,18 @@ import styles from './page.module.css';
 
 export default function Capabilities() {
   return (
-    <div className=''>
+    <main>
         <div className='bg-[#002060] md:h-28 mt-1 rounded-lg h-[40px]'>
             <span className='float-left h-full'>
-                <Image src="/3DiF-RightTri.png" alt="" width={310} height={115} className='h-full w-auto' />
+                <Image src="/images/3DiF-RightTri.png" alt="" width={310} height={115} className='h-full w-auto' />
             </span>
             <div className='md:pt-1'>
                 <div className='flex-row float-start gap-2 hidden md:flex'>
-                        <Image src="/certs/SDB_Self_Certified.png" alt="" width={75} height={40} />
-                        <Image src="/certs/HUBZone_Certified.png" alt="" width={75} height={90}  />
-                        <Image src="/certs/8a_Certified.png" alt="" width={75} height={90}  />
-                        <Image src="/certs/WOSB_Certified.png" alt="" width={75} height={90}  />
-                        <Image src="/SDVOSB-CVE-white-circle.png" alt="" width={100} height={80}  />
+                        <Image src="/images/certs/SDB_Self_Certified.png" alt="" width={75} height={40} />
+                        <Image src="/images/certs/HUBZone_Certified.png" alt="" width={75} height={90}  />
+                        <Image src="/images/certs/8a_Certified.png" alt="" width={75} height={90}  />
+                        <Image src="/images/certs/WOSB_Certified.png" alt="" width={75} height={90}  />
+                        <Image src="/images/SDVOSB-CVE-white-circle.png" alt="" width={100} height={80}  />
                 </div>
                 <div className='float-end text-white text-sm pr-2'>
                     <p>CAGE Code: 6E8B8<br />
@@ -31,17 +31,17 @@ export default function Capabilities() {
         </div>
         <div className='w-full grid grid-cols-1 md:grid-cols-12 -mt-2'>
             <div className="md:col-span-3">
-                <p><span className={styles.bigD}>D</span>epth | <span className={styles.bigD}>D</span>iligence | <span className={styles.bigD}>D</span>evotion</p>
+                <p><span className="bigD">D</span><span className='text-[#002060]'>epth</span> | <span className="bigD">D</span><span className='text-[#002060]'>iligence</span> | <span className="bigD">D</span><span className='text-[#002060]'>evotion</span></p>
             </div>
             <div className="md:col-span-9 -mt-2 md:-mt-1">
-                <div className="flex justify-center text-center"><i><span className={styles.bigD}>&nbsp;</span>Dedicated to Serving our Federal, Civilian, &amp; Commercial Customers since 2016</i></div>
+                <div className="flex justify-center text-center"><i><span className="bigD">&nbsp;</span>Dedicated to Serving our Federal, Civilian, &amp; Commercial Customers since 2016</i></div>
             </div>
         </div>
         <div className=''>
             <div className='flex justify-center'>
                 <p className='sectionTitle mb-2'>Overview</p>
             </div>
-            <p><Image className='float-start me-3 mt-1'src="/handshake.jpg" alt="" width={400} height={160}  />3DiF is a professional service and technology human capital integrator. We started providing human capital and professional services in 2016. We are headquartered in Reston, Virginia. 3DiF is an established, resilient, agile SDVOSB-CVE, WOSB, SDB, HUBZone, 8(a) provider of human capital, administrative, training, and technology services to government end clients. We focus on our clients by pioneering top-quality performers, and we champion honesty, authenticity, identity, accountability, and transparency with our employees and customers. To date, our foundational and grass-root economic growth focuses on human dignity in the marketplace, employees, stakeholders, clients, partners, and vendors. Within the last five years, our clients&apos; list includes the Department of Veteran&apos;s Affairs, Department of Education, Department of the Interior, and Department of Homeland Security.</p>
+            <p><Image className='float-start me-3 mt-1'src="/images/handshake.jpg" alt="" width={400} height={160}  />3DiF is a professional service and technology human capital integrator. We started providing human capital and professional services in 2016. We are headquartered in Reston, Virginia. 3DiF is an established, resilient, agile SDVOSB-CVE, WOSB, SDB, HUBZone, 8(a) provider of human capital, administrative, training, and technology services to government end clients. We focus on our clients by pioneering top-quality performers, and we champion honesty, authenticity, identity, accountability, and transparency with our employees and customers. To date, our foundational and grass-root economic growth focuses on human dignity in the marketplace, employees, stakeholders, clients, partners, and vendors. Within the last five years, our clients&apos; list includes the Department of Veteran&apos;s Affairs, Department of Education, Department of the Interior, and Department of Homeland Security.</p>
         </div>
         <div className=''>
             <div className='flex justify-center'>
@@ -110,10 +110,10 @@ export default function Capabilities() {
                         <b>Clients</b>
                     </p>
                     <ul className='ms-7'>
-                        <li className='mb-1'><Image src="/client-logos/dept-veterans-affairs.png" className={styles.clientImage} alt="" width={100} height={50}  />Department of Veterans Affairs</li>
-                        <li className='mb-1'><Image src="/client-logos/bureau-land-management.png" className={styles.clientImage} alt="" width={100} height={50}  />Bureau of Land Management</li>
-                        <li className='mb-1'><Image src="/client-logos/dept-education.png" className={styles.clientImage} alt="" width={100} height={50}  />Department of Education (sub)</li>
-                        <li className='mb-1'><Image src="/client-logos/dept-homeland-security.png" className={styles.clientImage} alt="" width={100} height={50}  />Department of Homeland Security (sub)</li>
+                        <li className='mb-1'><Image src="/images/client-logos/dept-veterans-affairs.png" className={styles.clientImage} alt="" width={100} height={50}  />Department of Veterans Affairs</li>
+                        <li className='mb-1'><Image src="/images/client-logos/bureau-land-management.png" className={styles.clientImage} alt="" width={100} height={50}  />Bureau of Land Management</li>
+                        <li className='mb-1'><Image src="/images/client-logos/dept-education.png" className={styles.clientImage} alt="" width={100} height={50}  />Department of Education (sub)</li>
+                        <li className='mb-1'><Image src="/images/client-logos/dept-homeland-security.png" className={styles.clientImage} alt="" width={100} height={50}  />Department of Homeland Security (sub)</li>
                     </ul>
                 </div>
                 <div>
@@ -143,7 +143,7 @@ export default function Capabilities() {
                     </ul>
                 </div>
                 <div className='grid-span-2'>
-                    <Image src="/fleur_de_lis.jpg" alt="" width={200} height={50} className='mx-auto' />
+                    <Image src="/images/fleur_de_lis.jpg" alt="" width={200} height={50} className='mx-auto' />
                 </div>
                 <div className='grid-span-auto'>
                     <p className='mb-2 font-bold'>From Employees:</p>
@@ -162,16 +162,16 @@ export default function Capabilities() {
             </span>
         </div>
         <div className={styles.capabilitiesBottom}>
-            <div className='flex justify-center'><Image src="/3dif-big.jpg" alt="" width={550} height={50}  /></div>
+            <div className='flex justify-center'><Image src="/images/3dif-big.jpg" alt="" width={550} height={50}  /></div>
             <p className='my-3'>A professional services &amp; technology human capital integrator.</p>
             <div className='flex justify-center gap-2'>
-                <Image className={styles.capabilitiesBottomImage} src="/certs/SDB_Self_Certified.png" alt="" width={100} height={50}  />
-                <Image className={styles.capabilitiesBottomImage} src="/certs/HUBZone_Certified.png" alt="" width={100} height={50}  />
-                <Image className={styles.capabilitiesBottomImage} src="/certs/8a_Certified.png" alt="" width={100} height={50}  />
-                <Image className={styles.capabilitiesBottomImage} src="/certs/WOSB_Certified.png" alt="" width={100} height={50}  />
-                <Image className={styles.capabilitiesBottomImageLast} src="/SDVOSB-CVE.png" alt="" width={100} height={50}  />
+                <Image className={styles.capabilitiesBottomImage} src="/images/certs/SDB_Self_Certified.png" alt="" width={100} height={50}  />
+                <Image className={styles.capabilitiesBottomImage} src="/images/certs/HUBZone_Certified.png" alt="" width={100} height={50}  />
+                <Image className={styles.capabilitiesBottomImage} src="/images/certs/8a_Certified.png" alt="" width={100} height={50}  />
+                <Image className={styles.capabilitiesBottomImage} src="/images/certs/WOSB_Certified.png" alt="" width={100} height={50}  />
+                <Image className={styles.capabilitiesBottomImageLast} src="/images/SDVOSB-CVE.png" alt="" width={100} height={50}  />
             </div>
         </div>
-    </div>
+    </main>
   )
 };

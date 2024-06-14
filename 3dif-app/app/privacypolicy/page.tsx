@@ -2,7 +2,7 @@ import React from 'react'
 
 const PrivacyPolicy = () => {
   return (
-    <div>
+    <main>
         <div className='flex justify-center'>
             <p className='pageTitle mb-2'>3DiF Privacy Policy</p>
         </div>
@@ -107,7 +107,7 @@ const PrivacyPolicy = () => {
                 Reston, VA 20190</strong>
             </div>
         </div>
-    </div>
+    </main>
   )
 }
 

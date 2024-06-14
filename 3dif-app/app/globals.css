@@ -37,3 +37,8 @@ a:hover {
   padding: 3px;
   border-radius: 0.5rem;
 }
+
+.bigD {
+  color: #C5B358;
+  font-size: 30px;
+}

@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-[#002060] text-xl text-white font-sans">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-center md:text-left">
             <div className="col-span-full lg:col-span-1 grid md:block justify-center">
-                <Image className='bg-white' src='/3DiF-Blue.png' alt='3DiF logo' width={250} height={50} />
+                <Image className='bg-white' src='/images/3DiF-Blue.png' alt='3DiF logo' width={250} height={50} />
                 <p className='max-w-[250px] text-center text-white text-base'>Inspiring Game Changers through Vision, Alignment & Execution</p>
             </div>
 
