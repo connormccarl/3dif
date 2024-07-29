@@ -13,7 +13,7 @@ export default function Capabilities() {
             <div className='md:pt-1'>
                 <div className='flex-row float-start gap-2 hidden md:flex'>
                         <Image src="/images/certs/SDB_Self_Certified.png" alt="" width={75} height={40} />
-                        <Image src="/images/certs/HUBZone_Certified.png" alt="" width={75} height={90}  />
+                        {/*<Image src="/images/certs/HUBZone_Certified.png" alt="" width={75} height={90}  />*/}
                         <Image src="/images/certs/8a_Certified.png" alt="" width={75} height={90}  />
                         <Image src="/images/certs/WOSB_Certified.png" alt="" width={75} height={90}  />
                         <Image src="/images/SDVOSB-CVE-white-circle.png" alt="" width={100} height={80}  />
@@ -41,7 +41,7 @@ export default function Capabilities() {
             <div className='flex justify-center'>
                 <p className='sectionTitle mb-2'>Overview</p>
             </div>
-            <p><Image className='float-start me-3 mt-1'src="/images/handshake.jpg" alt="" width={400} height={160}  />3DiF is a professional service and technology human capital integrator. We started providing human capital and professional services in 2016. We are headquartered in Reston, Virginia. 3DiF is an established, resilient, agile SDVOSB-CVE, WOSB, SDB, HUBZone, 8(a) provider of human capital, administrative, training, and technology services to government end clients. We focus on our clients by pioneering top-quality performers, and we champion honesty, authenticity, identity, accountability, and transparency with our employees and customers. To date, our foundational and grass-root economic growth focuses on human dignity in the marketplace, employees, stakeholders, clients, partners, and vendors. Within the last five years, our clients&apos; list includes the Department of Veteran&apos;s Affairs, Department of Education, Department of the Interior, and Department of Homeland Security.</p>
+            <p><Image className='float-start me-3 mt-1'src="/images/handshake.jpg" alt="" width={400} height={160}  />3DiF is a professional service and technology human capital integrator. We started providing human capital and professional services in 2016. We are headquartered in Reston, Virginia. 3DiF is an established, resilient, agile SDVOSB-CVE, WOSB, SDB, {/*HUBZone,*/} 8(a) provider of human capital, administrative, training, and technology services to government end clients. We focus on our clients by pioneering top-quality performers, and we champion honesty, authenticity, identity, accountability, and transparency with our employees and customers. To date, our foundational and grass-root economic growth focuses on human dignity in the marketplace, employees, stakeholders, clients, partners, and vendors. Within the last five years, our clients&apos; list includes the Department of Veteran&apos;s Affairs, Department of Education, Department of the Interior, and Department of Homeland Security.</p>
         </div>
         <div className=''>
             <div className='flex justify-center'>
@@ -166,7 +166,7 @@ export default function Capabilities() {
             <p className='my-3'>A professional services &amp; technology human capital integrator.</p>
             <div className='flex justify-center gap-2'>
                 <Image className={styles.capabilitiesBottomImage} src="/images/certs/SDB_Self_Certified.png" alt="" width={100} height={50}  />
-                <Image className={styles.capabilitiesBottomImage} src="/images/certs/HUBZone_Certified.png" alt="" width={100} height={50}  />
+                {/*<Image className={styles.capabilitiesBottomImage} src="/images/certs/HUBZone_Certified.png" alt="" width={100} height={50}  />*/}
                 <Image className={styles.capabilitiesBottomImage} src="/images/certs/8a_Certified.png" alt="" width={100} height={50}  />
                 <Image className={styles.capabilitiesBottomImage} src="/images/certs/WOSB_Certified.png" alt="" width={100} height={50}  />
                 <Image className={styles.capabilitiesBottomImageLast} src="/images/SDVOSB-CVE.png" alt="" width={100} height={50}  />

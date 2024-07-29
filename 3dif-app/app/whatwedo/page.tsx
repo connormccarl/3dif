@@ -56,7 +56,7 @@ const WhatWeDo = () => {
           <div className='flex justify-center mb-2'>
             <div className='flex gap-2'>
               <Image alt="8A Certified" src="/images/certs/8a_Certified.png" width={100} height={50} />
-              <Image alt="HUBZone Certified" src="/images/certs/HUBZone_Certified.png" width={100} height={50} />
+              {/*<Image alt="HUBZone Certified" src="/images/certs/HUBZone_Certified.png" width={100} height={50} />*/}
             </div>
           </div>
           <div className='flex justify-center mb-2'>

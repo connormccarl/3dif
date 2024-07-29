@@ -33,10 +33,10 @@ const MenuBar = () => {
                                         Home
                                     </Link>
                                     <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 sm:ps-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/aboutus">
-                                        About Us
+                                        Why Us
                                     </Link>
-                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 sm:ps-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/employeewall">
-                                        Employee Wall
+                                    <Link className="flex items-center gap-x-3.5 py-2 px-3 ps-8 sm:ps-3 rounded-lg hover:text-[#002060] hover:bg-white focus:ring-2 focus:ring-blue-500" href="/aboutus#purpose">
+                                        Our Purpose
                                     </Link>
                                 </div>
                             </div>

@@ -97,7 +97,7 @@ export default function Home() {
       </div>
       <div className='flex flex-col sm:flex-row justify-center items-center gap-5'>
         <div className="flex flex-row gap-5">
-          <Image src="/images/certs/HUBZone_Certified.png" alt="" width={100} height={50}  />
+          {/*<Image src="/images/certs/HUBZone_Certified.png" alt="" width={100} height={50}  />*/}
           <Image src="/images/certs/8a_Certified.png" alt="" width={100} height={50}  />
         </div>
         <div className="flex flex-row gap-5 items-center">

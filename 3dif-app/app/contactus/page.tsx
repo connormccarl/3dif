@@ -182,9 +182,10 @@ const ContactUs = () => {
                       className="hidden"
                     >
                       <option value="">Choose</option>
+                      <option>General Inquiry</option>
                       <option>VA SDVOSB-CVE</option>
                       <option>SBA Certified 8a</option>
-                      <option>SBA Certified HUBZone</option>
+                      {/*<option>SBA Certified HUBZone</option>*/}
                       <option>SBA Certified WOSB</option>
                     </select>
                   </div>
@@ -226,10 +227,10 @@ const ContactUs = () => {
           </div>
           <div className='my-3'>
             <div className='text-[#002060] font-bold'>
-              HUBZone-Certified Main Office
+              Principal Main Office
             </div>
             <div className='mt-1'>
-              HUBZone Address<br/>
+              Harbour Centre<br/>
               2 Eaton Street, Suite 704<br/>
               Hampton, VA 23669-4055
             </div>
@@ -251,15 +252,7 @@ const ContactUs = () => {
               Phone Number
             </div>
             <div className='mt-1'>
-              (571) 341-5060
-            </div>
-          </div>
-          <div className='my-3'>
-            <div className='text-[#002060] font-bold'>
-              Fax
-            </div>
-            <div className='mt-1'>
-              (571) 341-8325
+              571.341.5060
             </div>
           </div>
           <div className='my-3'>
@@ -268,6 +261,14 @@ const ContactUs = () => {
             </div>
             <div className='mt-1'>
               info@3dif.co
+            </div>
+          </div>
+          <div className='my-3'>
+            <div className='text-[#002060] font-bold'>
+              After Hours Email
+            </div>
+            <div className='mt-1'>
+              inform@3dif.co
             </div>
           </div>
         </div>

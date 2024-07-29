@@ -17,7 +17,7 @@ const SiteMap = () => {
                 </li>
                 <li>
                     <Link href="/aboutus">
-                        <Image src="/images/fleur_de_lis.jpg" alt="Fleur de Lis" width={24} height={10} className='inline' /> About Us
+                        <Image src="/images/fleur_de_lis.jpg" alt="Fleur de Lis" width={24} height={10} className='inline' /> Why Us
                     </Link>
                 </li>
                 <li>
@@ -46,11 +46,6 @@ const SiteMap = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/employeewall">
-                        <Image src="/images/fleur_de_lis.jpg" alt="Fleur de Lis" width={24} height={10} className='inline' /> Employee Wall
-                    </Link>
-                </li>
-                <li>
                     <Link href="/pastandpresentperformance">
                         <Image src="/images/fleur_de_lis.jpg" alt="Fleur de Lis" width={24} height={10} className='inline' /> Past and Present Performance
                     </Link>
@@ -58,11 +53,6 @@ const SiteMap = () => {
                 <li>
                     <Link href="/privacypolicy">
                         <Image src="/images/fleur_de_lis.jpg" alt="Fleur de Lis" width={24} height={10} className='inline' /> Privacy Policy
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/qualities">
-                        <Image src="/images/fleur_de_lis.jpg" alt="Fleur de Lis" width={24} height={10} className='inline' /> Qualities
                     </Link>
                 </li>
                 <li>

@@ -8,17 +8,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-center md:text-left">
             <div className="col-span-full lg:col-span-1 grid md:block justify-center">
                 <Image className='bg-white' src='/images/3DiF-Blue.png' alt='3DiF logo' width={250} height={50} />
-                <p className='max-w-[250px] text-center text-white text-base'>Inspiring Game Changers through Vision, Alignment & Execution</p>
+                <p className='max-w-[250px] text-center text-white text-base'>Inspiring Performance-Based Employees through Vision, Alignment & Execution</p>
             </div>
 
             <div>
                 <h4 className="font-semibold uppercase">Contact Us</h4>
 
                 <div className="mt-3 grid space-y-1 text-neutral-400 text-base">
-                    <p>Phone: (571) 341-5060</p>
+                    <p>Phone: 571.341.5060</p>
                     <p>Email: info@3dif.co</p>
                     <br />
-                    <p>HUBZone Address</p>
+                    <p>Principal Address</p>
                     <p>2 Eaton Street, Suite 704</p>
                     <p>Hampton, VA 23669-4055</p>
                     <br />

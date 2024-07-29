@@ -12,7 +12,7 @@ const CommunitySupport = () => {
             <div className='hs-tooltip [--trigger:hover] [--placement:bottom] md:[--placement:right] flex items-center'>
                 <div className='hs-tooltip-toggle'>
                     <a href="https://www.marchofdimes.org" target="_blank" className='block min-h-44 content-center'>
-                        <Image src="/images/community-logos/MarchOfDimes.jpg" alt="March of Dimes" width={270} height={50} />
+                        <Image src="/images/community-logos/MarchOfDimes.jpg" alt="March of Dimes" width={170} height={50} />
                     </a>
                     <div className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs border border-gray-100 rounded-lg shadow-md bg-[#002060] text-white p-3 text-center" role="tooltip">
                         <div className="text-xl font-bold mb-2">March of Dimes</div>
@@ -25,7 +25,7 @@ const CommunitySupport = () => {
             <div className='hs-tooltip [--trigger:hover] [--placement:bottom] md:[--placement:right] flex items-center'>
                 <div className='hs-tooltip-toggle'>
                     <a href="https://www.stjude.org" target="_blank" className='block min-h-44 content-center'>
-                        <Image src="/images/community-logos/St-Jude.jpg" alt="St. Jude" width={270} height={50} />
+                        <Image src="/images/community-logos/St-Jude.jpg" alt="St. Jude" width={170} height={50} />
                     </a>
                     <div className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs border border-gray-100 rounded-lg shadow-md bg-[#002060] text-white p-3 text-center" role="tooltip">
                         <div className="text-xl font-bold mb-2">St. Jude</div>
@@ -38,7 +38,7 @@ const CommunitySupport = () => {
             <div className='hs-tooltip [--trigger:hover] [--placement:bottom] md:[--placement:left] flex items-center'>
                 <div className='hs-tooltip-toggle'>
                     <a href="https://www.worldwildlife.org" target="_blank" className='block min-h-44 content-center'>
-                        <Image src="/images/community-logos/WorldWildLife.jpg" alt="The World Wildlife Fund" width={270} height={50} />
+                        <Image src="/images/community-logos/WorldWildLife.jpg" alt="The World Wildlife Fund" width={170} height={50} />
                     </a>
                     <div className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs border border-gray-100 rounded-lg shadow-md bg-[#002060] text-white p-3 text-center" role="tooltip">
                         <div className="text-xl font-bold mb-2">The World Wildlife Fund</div>
@@ -51,7 +51,7 @@ const CommunitySupport = () => {
             <div className='hs-tooltip [--trigger:hover] [--placement:bottom] md:[--placement:left] flex items-center'>
                 <div className='hs-tooltip-toggle'>
                     <a href="https://www.pinministry.org" target="_blank" className='block min-h-44 content-center'>
-                        <Image src="/images/community-logos/PeopleInNeed.png" alt="People In Need Ministry" width={270} height={50} />
+                        <Image src="/images/community-logos/PeopleInNeed.png" alt="People In Need Ministry" width={170} height={50} />
                     </a>
                     <div className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs border border-gray-100 rounded-lg shadow-md bg-[#002060] text-white p-3 text-center" role="tooltip">
                         <div className="text-xl font-bold mb-2">People In Need Ministry</div>
@@ -64,7 +64,7 @@ const CommunitySupport = () => {
             <div className='hs-tooltip [--trigger:hover] [--placement:bottom] md:[--placement:right] flex items-center'>
                 <div className='hs-tooltip-toggle'>
                     <a href="https://www.pinecove.com" target="_blank" className='block min-h-44 content-center'>
-                        <Image src="/images/community-logos/PineCove.jpg" alt="Pine Cove" width={270} height={50} />
+                        <Image src="/images/community-logos/PineCove.jpg" alt="Pine Cove" width={170} height={50} />
                     </a>
                     <div className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs border border-gray-100 rounded-lg shadow-md bg-[#002060] text-white p-3 text-center" role="tooltip">
                         <div className="text-xl font-bold mb-2">Pine Cove</div>
@@ -77,7 +77,7 @@ const CommunitySupport = () => {
             <div className='hs-tooltip [--trigger:hover] [--placement:bottom] md:[--placement:right] flex items-center'>
                 <div className='hs-tooltip-toggle'>
                     <a href="https://www.covenanthouse.org/donation-options/donate-today" target="_blank" className='block min-h-44 content-center'>
-                        <Image src="/images/community-logos/CovenantHouse.png" alt="Covenant House" width={270} height={50} />
+                        <Image src="/images/community-logos/CovenantHouse.png" alt="Covenant House" width={170} height={50} />
                     </a>
                     <div className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs border border-gray-100 rounded-lg shadow-md bg-[#002060] text-white p-3 text-center" role="tooltip">
                         <div className="text-xl font-bold mb-2">Covenant House</div>
@@ -90,7 +90,7 @@ const CommunitySupport = () => {
             <div className='hs-tooltip [--trigger:hover] [--placement:up] md:[--placement:left] flex items-center'>
                 <div className='hs-tooltip-toggle'>
                     <a href="http://hosa.org" target="_blank" className='block min-h-44 content-center'>
-                        <Image src="/images/community-logos/HOSALogo.jpg" alt="HOSA Future Health Professionals" width={270} height={50} />
+                        <Image src="/images/community-logos/HOSALogo.jpg" alt="HOSA Future Health Professionals" width={170} height={50} />
                     </a>
                     <div className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs border border-gray-100 rounded-lg shadow-md bg-[#002060] text-white p-3 text-center" role="tooltip">
                         <div className="text-xl font-bold mb-2">HOSA Future Health Professionals</div>
@@ -103,7 +103,7 @@ const CommunitySupport = () => {
             <div className='hs-tooltip [--trigger:hover] [--placement:up] md:[--placement:left] flex items-center'>
                 <div className='hs-tooltip-toggle'>
                     <a href="https://shrineofstjude.org" target="_blank" className='block min-h-44 content-center'>
-                        <Image src="/images/community-logos/StJude.png" alt="The National Shrine of St Jude" width={270} height={50} />
+                        <Image src="/images/community-logos/StJude.png" alt="The National Shrine of St Jude" width={170} height={50} />
                     </a>
                     <div className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs border border-gray-100 rounded-lg shadow-md bg-[#002060] text-white p-3 text-center" role="tooltip">
                         <div className="text-xl font-bold mb-2">The National Shrine of St Jude</div>
@@ -116,7 +116,7 @@ const CommunitySupport = () => {
             <div className='hs-tooltip [--trigger:hover] [--placement:up] md:[--placement:right] flex items-center'>
                 <div className='hs-tooltip-toggle'>
                     <a href="https://afcea-tidewater.org/" target="_blank" className='block min-h-44 content-center'>
-                        <Image src="/images/community-logos/AFCEA-Tidewater.png" alt="The Tidewater Chapter" width={270} height={50} />
+                        <Image src="/images/community-logos/AFCEA-Tidewater.png" alt="The Tidewater Chapter" width={170} height={50} />
                     </a>
                     <div className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs border border-gray-100 rounded-lg shadow-md bg-[#002060] text-white p-3 text-center" role="tooltip">
                         <div className="text-xl font-bold mb-2">The Tidewater Chapter</div>
@@ -129,7 +129,7 @@ const CommunitySupport = () => {
             <div className='hs-tooltip [--trigger:hover] [--placement:up] md:[--placement:right] flex items-center'>
                 <div className='hs-tooltip-toggle'>
                     <a href="https://www.cancer.org" target="_blank" className='block min-h-44 content-center'>
-                        <Image src="/images/community-logos/AmericanCancer.png" alt="The American Cancer Society" width={270} height={50} />
+                        <Image src="/images/community-logos/AmericanCancer.png" alt="The American Cancer Society" width={170} height={50} />
                     </a>
                     <div className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs border border-gray-100 rounded-lg shadow-md bg-[#002060] text-white p-3 text-center" role="tooltip">
                         <div className="text-xl font-bold mb-2">The American Cancer Society</div>
@@ -142,7 +142,7 @@ const CommunitySupport = () => {
             <div className='hs-tooltip [--trigger:hover] [--placement:up] md:[--placement:left] flex items-center'>
                 <div className='hs-tooltip-toggle'>
                     <a href="https://www.comfortcases.org" target="_blank" className='block min-h-44 content-center'>
-                        <Image src="/images/community-logos/ComfortCase.jpg" alt="Comfort Case" width={270} height={50} />
+                        <Image src="/images/community-logos/ComfortCase.jpg" alt="Comfort Case" width={170} height={50} />
                     </a>
                     <div className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs border border-gray-100 rounded-lg shadow-md bg-[#002060] text-white p-3 text-center" role="tooltip">
                         <div className="text-xl font-bold mb-2">Comfort Case</div>
@@ -155,7 +155,7 @@ const CommunitySupport = () => {
             <div className='hs-tooltip [--trigger:hover] [--placement:up] md:[--placement:left] flex items-center'>
                 <div className='hs-tooltip-toggle'>
                     <a href="https://www.autism-society.org" target="_blank" className='block min-h-44 content-center'>
-                        <Image src="/images/community-logos/AutismSociety.jpg" alt="Autism Society" width={270} height={50} />
+                        <Image src="/images/community-logos/AutismSociety.jpg" alt="Autism Society" width={170} height={50} />
                     </a>
                     <div className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible hidden opacity-0 transition-opacity absolute invisible z-10 max-w-xs border border-gray-100 rounded-lg shadow-md bg-[#002060] text-white p-3 text-center" role="tooltip">
                         <div className="text-xl font-bold mb-2">Autism Society</div>

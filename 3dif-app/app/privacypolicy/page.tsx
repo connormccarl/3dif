@@ -103,8 +103,9 @@ const PrivacyPolicy = () => {
 
                 <strong>3DiF <br/>
                 Attn: Corporate Communications / Privacy<br/>
-                1712 Clubhouse Road, Suite 101<br/>
-                Reston, VA 20190</strong>
+                Harbour Centre<br/>
+                2 Eaton Street, Suite 704<br/>
+                Hampton, VA 23669-4055</strong>
             </div>
         </div>
     </main>

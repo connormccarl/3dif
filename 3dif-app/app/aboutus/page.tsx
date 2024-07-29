@@ -6,7 +6,7 @@ const AboutUs = () => {
       <div className='flex justify-center mb-6 text-center'>
         <div>
             <p className='pageTitle'>About Us</p>
-            <span className='text-[#002060] font-bold italic'>3DiF is a professional service, training, and technology human capital integrator company.</span>
+            <span className='text-[#002060] font-bold italic'>3DiF Human Capital Integrator, Professional, Technical and Training Services dedicated to supporting federal and prime contractors.</span>
         </div>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-6 gap-4'>
@@ -29,12 +29,12 @@ const AboutUs = () => {
         </div>
         <div className='md:col-span-4 md:border-l-2 border-[#C5B358] md:pl-4'>
           <p>
-            3DiF is a resilient, purpose-driven, trust-based emerging Small Business with the following Set-Aside certifications:  SDVOSB-CVE, SBA-Certified WOSB, SBA-Certified HUBZone, 8(a) SBA-Certified, and SDB.  We focus on delivering top-quality performance and we champion brutal honesty, authenticity, identity, accountability, and transparency in the service of our clients. We hold ourselves accountable and we respect the virtues of valuing self, people, process, technology, and teamwork.
+            3DiF is a resilient, purpose-driven, trust-based emerging Small Business with the following Set-Aside certifications:  SDVOSB-CVE, SBA-Certified WOSB, {/*SBA-Certified HUBZone,*/} 8(a) SBA-Certified, and SDB.  We focus on delivering top-quality performance and we champion brutal honesty, authenticity, identity, accountability, and transparency in the service of our clients. We hold ourselves accountable and we respect the virtues of valuing self, people, process, technology, and teamwork.
           </p>
           <p className='mt-2'>
             We are proven United States of America military service veterans, agile and transformational business leaders, innovators, solution providers, project and task managers and teams who strive to conform to our clients&apos; requirements effectively, efficiently, and succinctly on every engagement.
           </p>
-          <p className='text-2xl mt-3 mb-2 text-[#002060] font-bold'>Purpose</p>
+          <p id="purpose" className='text-2xl mt-3 mb-2 text-[#002060] font-bold'>Purpose</p>
           <p>
             We look forward to your partnership in support of joining 3DiF&apos;s mission of reimagining a quantum work culture that is stimulating and rewarding through managing self, hope, faith, and love for purposed-trust-based employees, stakeholders, and clients in Human Capital, Technology, Administration, and Training.
           </p>
