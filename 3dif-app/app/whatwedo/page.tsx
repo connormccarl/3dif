@@ -48,22 +48,24 @@ const WhatWeDo = () => {
           <video width={640} height={360} autoPlay loop muted className="max-w-full">
             <source src="/video/whatwedo.mp4" type="video/mp4" />
           </video>
+          <div className='flex justify-center mt-3 gap-2 md:h-56 items-center'>
+              <Image alt="8A Certified" src="/images/certs/8a_Certified.png" width={100} height={50} />
+              {/*<Image alt="HUBZone Certified" src="/images/certs/HUBZone_Certified.png" width={100} height={50} />*/}
+              <Image alt="WOSB Certified" src="/images/certs/WOSB_Certified.png" width={100} height={50} />
+              <Image alt="SDVOSB" src="/images/SDVOSB-CVE.png"  width={100} height={50} className='max-h-24' />
+          </div>
         </div>
         <div>
           <div className='flex justify-center mb-2'>
             <Image alt="Fleur de Lis" src="/images/fleur_de_lis.jpg" width={200} height={50} />
           </div>
-          <div className='flex justify-center mb-2'>
-            <div className='flex gap-2'>
-              <Image alt="8A Certified" src="/images/certs/8a_Certified.png" width={100} height={50} />
-              {/*<Image alt="HUBZone Certified" src="/images/certs/HUBZone_Certified.png" width={100} height={50} />*/}
-            </div>
-          </div>
-          <div className='flex justify-center mb-2'>
-            <div className='flex gap-2 items-center'>
-              <Image alt="WOSB Certified" src="/images/certs/WOSB_Certified.png" width={100} height={50} />
-              <Image alt="SDVOSB" src="/images/SDVOSB-CVE.png"  width={100} height={50} className='max-h-24' />
-            </div>
+          <div className='flex flex-col'>
+            <Image alt="GSA Award" src="/images/awards/gsa.png" width={300} height={150} />
+            <div className='text-lg font-bold ms-1'>GSA Multiple Award Schedule (MSA)</div>
+            <div className='text-lg font-bold ms-1'>Prime Contractor</div>
+            <div className='text-lg font-bold ms-1'>Contract #: 47QRAA24D0057</div>
+            <div className='text-lg font-bold ms-1'>NAICS: 541611</div>
+            <div className='text-lg font-bold ms-1'>SIN: 541611W</div>
           </div>
         </div>
       </div>
