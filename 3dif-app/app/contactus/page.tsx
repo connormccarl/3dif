@@ -1,25 +1,78 @@
 "use client"
-import React, { useState } from 'react'
-import { useForm } from 'react-hook-form'
-
-interface formData {
-  firstName: string,
-  lastName: string,
-  email: string,
-  title: string,
-  company: string,
-  companyUrl: string,
-  phone: string,
-  preferredContact: string,
-  interest: [],
-  message: string
-}
+import React, { FormEvent, useState } from 'react'
+import { MultiSelect } from 'react-multi-select-component';
+        
 
 const ContactUs = () => {
-  const { register, handleSubmit } = useForm();
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [title, setTitle] = useState('');
+  const [company, setCompany] = useState('');
+  const [companyUrl, setCompanyUrl] = useState('');
+  const [phone, setPhone] = useState('');
+  const [preferredContact, setPreferredContact] = useState([]);
+  const [interest, setInterest] = useState([]);
+  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const contactOptions = [
+    { value: 'Text', label: 'Text' },
+    { value: 'Phone', label: 'Phone' },
+    { value: 'Email', label: 'Email' }
+  ];
+
+  const interestOptions = [
+    { value: 'General Inquiry', label: 'General Inquiry' },
+    { value: 'VA SDVOSB-CVE', label: 'VA SDVOSB-CVE' },
+    { value: 'SBA Certified 8a', label: 'SBA Certified 8a' },
+    /*{ value: 'SBA Certified HUBZone', label: 'SBA Certified HUBZone' },*/
+    { value: 'SBA Certified WOSB', label: 'SBA Certified WOSB' }
+  ];
+
+  const resetForm = () => {
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setTitle('');
+    setCompany('');
+    setCompanyUrl('');
+    setPhone('');
+    setPreferredContact([]);
+    setInterest([]);
+    setMessage('');
+  }
   
-  const onSubmit = (data: formData) => {
-    alert(JSON.stringify(data));
+  const onSubmit = async (e: FormEvent) => {
+    setLoading(true);
+    e.preventDefault();
+
+    // send email
+    const data = {
+      firstName,
+      lastName,
+      email,
+      title,
+      company,
+      companyUrl,
+      phone,
+      message,
+      preferredContact: preferredContact.map((element: any) => element.value),
+      interest: interest.map((element: any) => element.value)
+    }
+
+    //console.log(data);
+
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      body: JSON.stringify(data)
+    });
+    
+    const responseData = await response.json();
+    alert(responseData['message']);
+    
+    resetForm();
+    setLoading(false);
   }
 
   return (
@@ -28,7 +81,7 @@ const ContactUs = () => {
           <p className='pageTitle mb-2'>Contact Us</p>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
-        <form className='md:col-span-2'>
+        <form onSubmit={onSubmit} noValidate className='group md:col-span-2'>
           <div className="space-y-12">
             <div className="border-b border-gray-900/10 pb-10">
               <h2 className="text-xl font-semibold leading-7">Teaming Inquiry</h2>
@@ -37,46 +90,61 @@ const ContactUs = () => {
               <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div className="sm:col-span-3">
                   <label htmlFor="firstName" className="block text-lg font-medium leading-6">
-                    First Name*
+                    First Name
                   </label>
                   <div className="mt-2">
                     <input
                       type="text"
-                      {...register("firstName")}
+                      value={firstName}
+                      onChange={e => setFirstName(e.target.value)}
                       id="firstName"
                       autoComplete="givenName"
-                      className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#002060] sm:text-lg sm:leading-6"
+                      className="peer block w-full rounded-md border-gray-300 text-lg sm:leading-6"
+                      required
                     />
+                    <span className="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+                        Required
+                    </span>
                   </div>
                 </div>
 
                 <div className="sm:col-span-3">
                   <label htmlFor="lastName" className="block text-lg font-medium leading-6">
-                    Last Name*
+                    Last Name
                   </label>
                   <div className="mt-2">
                     <input
                       type="text"
-                      {...register("lastName")}
+                      value={lastName}
+                      onChange={e => setLastName(e.target.value)}
                       id="lastName"
                       autoComplete="familyName"
-                      className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#002060] sm:text-lg sm:leading-6"
+                      className="peer block w-full rounded-md border-gray-300 text-lg sm:leading-6"
+                      required
                     />
+                    <span className="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+                        Required
+                    </span>
                   </div>
                 </div>
 
                 <div className="sm:col-span-full">
                   <label htmlFor="email" className="block text-lg font-medium leading-6">
-                    Email*
+                    Email
                   </label>
                   <div className="mt-2">
                     <input
                       id="email"
-                      {...register("email")}
+                      value={email}
+                      onChange={e => setEmail(e.target.value)}
                       type="email"
                       autoComplete="email"
-                      className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#002060] sm:text-lg sm:leading-6"
+                      className="peer block w-full rounded-md border-gray-300 text-lg sm:leading-6"
+                      required
                     />
+                    <span className="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+                        Required
+                    </span>
                   </div>
                 </div>
 
@@ -87,9 +155,10 @@ const ContactUs = () => {
                   <div className="mt-2">
                     <input
                       id="title"
-                      {...register("title")}
+                      value={title}
+                      onChange={e => setTitle(e.target.value)}
                       autoComplete="title"
-                      className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#002060] sm:text-lg sm:leading-6"
+                      className="block w-full rounded-md border-gray-300 text-lg sm:leading-6"
                     />
                   </div>
                 </div>
@@ -101,9 +170,10 @@ const ContactUs = () => {
                   <div className="mt-2">
                     <input
                       id="company"
-                      {...register("company")}
+                      value={company}
+                      onChange={e => setCompany(e.target.value)}
                       autoComplete="company"
-                      className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#002060] sm:text-lg sm:leading-6"
+                      className="block w-full rounded-md border-gray-300 text-lg sm:leading-6"
                     />
                   </div>
                 </div>
@@ -115,24 +185,30 @@ const ContactUs = () => {
                   <div className="mt-2">
                     <input
                       id="companyUrl"
-                      {...register("companyUrl")}
+                      value={companyUrl}
+                      onChange={e => setCompanyUrl(e.target.value)}
                       autoComplete="companyUrl"
-                      className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#002060] sm:text-lg sm:leading-6"
+                      className="block w-full rounded-md border-gray-300 text-lg sm:leading-6"
                     />
                   </div>
                 </div>
 
                 <div className="sm:col-span-3">
                   <label htmlFor="phone" className="block text-lg font-medium leading-6">
-                    Phone Number*
+                    Phone Number
                   </label>
                   <div className="mt-2">
                     <input
                       id="phone"
-                      {...register("phone")}
+                      value={phone}
+                      onChange={e => setPhone(e.target.value)}
                       autoComplete="phone"
-                      className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#002060] sm:text-lg sm:leading-6"
+                      className="peer block w-full rounded-md border-gray-300 text-lg sm:leading-6"
+                      required
                     />
+                    <span className="mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
+                        Required
+                    </span>
                   </div>
                 </div>
 
@@ -141,23 +217,13 @@ const ContactUs = () => {
                     Preferred method of contact
                   </label>
                   <div className="mt-2">
-                    <select
-                      id="preferredContact"
-                      {...register("preferredContact")}
-                      autoComplete="preferredContact"
-                      data-hs-select='{
-                        "toggleTag": "<button type=\"button\"></button>",
-                        "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative px-4 pe-9 flex text-nowrap cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-lg focus:border-blue-500 focus:ring-blue-500 before:absolute before:inset-0 before:z-[1] w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#002060] sm:leading-6",
-                        "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300",
-                        "optionClasses": "py-2 px-4 w-full text-lg cursor-pointer hover:bg-[#002060] rounded-lg focus:outline-none focus:bg-[#002060] hover:text-white focus:text-white",
-                        "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"hidden hs-selected:block\"><svg class=\"flex-shrink-0 size-3.5 text-[#D4B251]\" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span></div>",
-                        "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"flex-shrink-0 size-3.5\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\"><path d=\"m7 15 5 5 5-5\"/><path d=\"m7 9 5-5 5 5\"/></svg></div>"
-                      }' className="hidden"
-                    >
-                      <option>Text</option>
-                      <option>Phone</option>
-                      <option>Email</option>
-                    </select>
+                    <MultiSelect
+                        options={contactOptions}
+                        value={preferredContact}
+                        onChange={setPreferredContact}
+                        labelledBy='Select'
+                        className='rounded-md text-lg sm:leading-6'
+                      />
                   </div>
                 </div>
 
@@ -166,28 +232,13 @@ const ContactUs = () => {
                     Interest
                   </label>
                   <div className="mt-2">
-                    <select multiple 
-                      id="interest"
-                      {...register("interest")}
-                      autoComplete="interest"
-                      data-hs-select='{
-                        "placeholder": "Select multiple options...",
-                        "toggleTag": "<button type=\"button\"></button>",
-                        "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative px-4 pe-9 flex text-nowrap cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-lg focus:border-blue-500 focus:ring-blue-500 before:absolute before:inset-0 before:z-[1] w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#002060] sm:leading-6",
-                        "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300",
-                        "optionClasses": "py-2 px-4 w-full text-lg cursor-pointer hover:bg-[#002060] rounded-lg focus:outline-none focus:bg-[#002060] hover:text-white focus:text-white",
-                        "optionTemplate": "<div class=\"flex justify-between items-center w-full\"><span data-title></span><span class=\"hidden hs-selected:block\"><svg class=\"flex-shrink-0 size-3.5 text-[#D4B251]\" xmlns=\"http:.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\"><polyline points=\"20 6 9 17 4 12\"/></svg></span></div>",
-                        "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"flex-shrink-0 size-3.5\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\"><path d=\"m7 15 5 5 5-5\"/><path d=\"m7 9 5-5 5 5\"/></svg></div>"
-                      }' 
-                      className="hidden"
-                    >
-                      <option value="">Choose</option>
-                      <option>General Inquiry</option>
-                      <option>VA SDVOSB-CVE</option>
-                      <option>SBA Certified 8a</option>
-                      {/*<option>SBA Certified HUBZone</option>*/}
-                      <option>SBA Certified WOSB</option>
-                    </select>
+                    <MultiSelect
+                      options={interestOptions}
+                      value={interest}
+                      onChange={setInterest}
+                      labelledBy='Select'
+                      className='rounded-md text-lg sm:leading-6'
+                    />
                   </div>
                 </div>
 
@@ -198,10 +249,10 @@ const ContactUs = () => {
                   <div className="mt-2">
                     <textarea
                       id="message"
-                      {...register("message")}
+                      value={message}
+                      onChange={e => setMessage(e.target.value)}
                       rows={4}
-                      className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#002060] text-lg sm:leading-6"
-                      defaultValue={''}
+                      className="block w-full rounded-md border-gray-300 text-lg sm:leading-6"
                     />
                   </div>
                 </div>
@@ -215,9 +266,15 @@ const ContactUs = () => {
             </div>
             <button
               type="submit"
-              className="rounded-md bg-[#002060] px-20 py-2 text-lg font-semibold text-white shadow-sm hover:bg-[#D4B251] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              className="rounded-md bg-[#002060] px-20 py-2 text-lg font-semibold text-white shadow-sm hover:bg-[#D4B251] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 group-invalid:pointer-events-none group-invalid:opacity-30"
             >
-              Send Message
+              {loading ? 
+                <svg className="animate-spin text-gray-300 h-5 w-5 mr-3" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+              :
+                "Send Message"
+              }
             </button>
           </div>
         </form>
