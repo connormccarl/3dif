@@ -34,14 +34,55 @@ export default function Capabilities() {
                 <p><span className="bigD">D</span><span className='text-[#002060]'>epth</span> | <span className="bigD">D</span><span className='text-[#002060]'>iligence</span> | <span className="bigD">D</span><span className='text-[#002060]'>evotion</span></p>
             </div>
             <div className="md:col-span-9 -mt-2 md:-mt-1">
-                <div className="flex justify-center text-center"><i><span className="bigD">&nbsp;</span>Dedicated to Serving our Federal, Civilian, &amp; Commercial Customers since 2016</i></div>
+                <div className="flex justify-center text-center"><i><span className="bigD">&nbsp;</span>Dedicated to Serving our Federal Government &amp; Prime Contractors</i></div>
+                <div className="flex justify-center text-center text-[#002060] font-bold -mt-3"><i><span className="bigD">&nbsp;</span>Human Capital Operation Services Integrator</i></div>
             </div>
         </div>
         <div className=''>
             <div className='flex justify-center'>
                 <p className='sectionTitle mb-2'>Overview</p>
             </div>
-            <p><Image className='float-start me-3 mt-1'src="/images/handshake.jpg" alt="" width={400} height={160}  />3DiF is a professional service and technology human capital integrator. We started providing human capital and professional services in 2016. We are headquartered in Reston, Virginia. 3DiF is an established, resilient, agile SDVOSB-CVE, WOSB, SDB, {/*HUBZone,*/} 8(a) provider of human capital, administrative, training, and technology services to government end clients. We focus on our clients by pioneering top-quality performers, and we champion honesty, authenticity, identity, accountability, and transparency with our employees and customers. To date, our foundational and grass-root economic growth focuses on human dignity in the marketplace, employees, stakeholders, clients, partners, and vendors. Within the last five years, our clients&apos; list includes the Department of Veteran&apos;s Affairs, Department of Education, Department of the Interior, and Department of Homeland Security.</p>
+            <div><Image className='float-start me-3 mt-1'src="/images/handshake.jpg" alt="" width={400} height={160}  /><b>Why 3DiF and The Benefit— Empowering People. Delivering Results. Advancing Missions.</b><br/>
+            At 3DiF, our mission is to deliver exceptional results through an unwavering commitment rooted in <b>depth</b>—self-reflection and intentional growth; <b>diligence</b>—ethical action guided by emotional intelligence; and <b>devotion</b>—purpose-driven resilience for the success of all professional relationships. These values are consistently reflected in our thoughts, words, and actions.
+            <br/>
+            <div className='my-4'>
+                <b>By selecting 3DiF, you benefit from and not limited to:</b>
+                <ul className='list-square list-inside ms-6'>
+                    <li>A commitment to cultivating a workplace and partnership culture grounded in self-awareness, trust, inclusion, accountability, and a no-nonsense approach to growth and performance excellence.</li>
+                    <li>A values-driven team that brings agility, flexibility, authenticity, transparency, and a passion for helping end client—delivering results with efficiency, integrity, and a clear focus on achieving your goals.</li>
+                    <li>A responsive, collaborative, and easy-to-work-with leadership team.</li>
+                </ul>
+            </div>
+            <b>Overview: </b> 3DiF is a certified 8(a), Woman-Owned Small Business (WOSB), Service-Disabled Veteran-Owned Small Business (SDVOSB), and Small Disadvantaged Business (SDB), proudly headquartered in downtown Hampton, Virginia.<br/>
+            As a lean, mission-focused, high-performance government contracting small business grounded in strong work ethic, 3DiF brings over seven years of experience delivering targeted, holistic, and eco-conscious professionals in federal human capital operation support, administrative support, program management, talent acquisition, and technology services. We serve federal civilian agencies primarily as a subcontractor under teaming agreements and also as a prime, providing services to agencies including the Department of Homeland Security (DHS), Internal Revenue Service (IRS), Department of Education (DoED), and Department of the Interior (DOI).
+            </div>
+        </div>
+        <div className=''>
+            <div className='flex justify-center'>
+                <p className='sectionTitle mb-2'>Core Competencies</p>
+            </div>
+            <p>
+                <ul className='list-square list-inside ms-6'>
+                    <li>Human Capital Operation Support Services</li>
+                    <li>Talent Acquisition including Hiring &amp; Recruiting</li>
+                    <li>Administrative, Technical and Technology Enabled Support Services</li>
+                    <li>Back Office, Customer Service, Program Management Support Services</li>
+                </ul>
+            </p>
+        </div>
+        <div className=''>
+            <div className='flex justify-center'>
+                <p className='sectionTitle mb-2'>Differentiators—Our Employees&apos; Success Defines Our Purpose!</p>
+            </div>
+            <p>
+                <ul className='list-square list-inside ms-6'>
+                    <li><b>Certified across multiple SBA and VA socio-economic programs</b> — 8(a), WOSB, SDVOSB, and SDB — with a proven track record of delivering results efficiently while fostering a compliant, strong, mission-aligned relationships.</li>
+                    <li><b>Demonstrated success and a strong, values-driven partnership</b> supporting mission objectives with agility, reliability, transparency, authenticity, accountability, flexibility, proactive risk assessment, compliance, and measurable outcomes.</li>
+                    <li><b>Eco-conscious, people-first service model</b> that prioritizes sustainability, employee engagement, and client satisfaction.</li>
+                    <li><b>Our mutually aligned partnership with our employees drives excellence and success through its Five Pillars:— . Self-Reflection. Process. Technology. Communication. Continuous Improvement.</b></li>
+                    <li><b>Aligned Purpose-Driven People are our greatest asset.</b> Through a culture grounded in relationship-building, proactive and transparent communication, continuous learning, and personal growth, we elevate performance while cultivating a workplace that values respect, kindness, leadership, teamwork, and a shared commitment to quality and on-time mission delivery.</li>
+                </ul>
+            </p>
         </div>
         <div className=''>
             <div className='flex justify-center'>
@@ -50,9 +91,7 @@ export default function Capabilities() {
             <div className='grid grid-cols-1 md:grid-cols-2'>
                 <div>
                     <p>
-                        <b>Human Capital — 541612</b>
-                        <i>(Subcontractor)</i><br/>
-                        <i>Personnel, Payroll and Benefits Operational Support</i>
+                        <b>541612 – Human Capital Services (Primary)</b>
                     </p>
                     <ul className='list-square list-inside ms-7'>
                         <li>Payroll Support</li>
@@ -60,42 +99,38 @@ export default function Capabilities() {
                         <li>Personnel Action Support</li>
                         <li>Employee Onboarding/Orientation</li>
                         <li>Customer Support Call Center</li>
-                        <li>New Hire Support</li>
-                        <li>Orientation Support</li>
-                        <li>Workflow Development</li>
+                        <li>New Hire, Orientation, Training Support</li>
+                        <li>Recruiting &amp; Hiring</li>
+                        <li>Workflow Development and Quality Control</li>
                     </ul>
                 </div>
                 <div>
                     <p>
-                        <b>Administrative — 541611 / 561110</b>
-                        <i>(Subcontractor)</i><br/>
-                        <i>Project and Administrative Management</i>
+                        <b>NAIC Codes</b>
                     </p>
                     <ul className='list-square list-inside ms-7'>
-                        <li>Strategic Planning</li>
-                        <li>Administrative Support</li>
-                        <li>Logistics Support</li>
-                        <li>Document Management</li>
-                        <li>Recruiting and Hiring</li>
-                    </ul>
-                    <p className='mt-5'>
-                        <b>Court Reporting — 561492</b>
-                    </p>
-                    <ul className='list-square list-inside ms-7'>
-                        <li>Virtual Court Reporting Services</li>
+                        <li><b>541612 Human Capital (P)</b></li>
+                        <li>541611 Administrative Management</li>
+                        <li>561110 Office Administrative Services</li>
+                        <li>561410 Documentation Services</li>
+                        <li>561499 Business Support Services</li>
+                        <li>519190 Other Information Services</li>
+                        <li>541519 Other Computer Related Services</li>
+                        <li>541618 Other Management Services</li>
                     </ul>
                 </div>
                 <div className='mt-5'>
                     <p>
-                        <b>VAR Partner - Training Solutions - 611420/611430</b><br/>
-                        <i>Live virtual instructor led; Self-paced on-demand; Private on-site</i>
+                        <b>541611 – Management &amp; Administrative</b><br/>
                     </p>
                     <ul className='list-square list-inside ms-7'>
-                        <li>DoD directives 8570/8140 Certification Training</li>
-                        <li>NIST NICE Certification Training</li>
-                        <li>Business Skills and Process Improvement</li>
-                        <li><b>Brands/Products:</b> Adobe, Agile, AWS, Cisco, Citrix, CompTIA, DevOps, EC-Council, ITIL, ISC2, ISACA, Leadership & Prof. Dev., Microsoft Office, Microsoft Technical, PMI, Scrum, Tableau, VMWare</li>
-                        <li><b>Training by Job Roles:</b> Business Analysis, Cloud, Cybersecurity, Data & Analytics, DevOps, Human Resources, Networking, Programming, Project Management, Service Desk, Service Management, Virtualization</li>
+                        <li>Project and Program Management</li>
+                        <li>Strategic Planning</li>
+                        <li>Administrative Support</li>
+                        <li>Logistics Support</li>
+                        <li>Document Management</li>
+                        <li>Clerical</li>
+                        <li>Data Analyst</li>
                     </ul>
                 </div>
             </div>
@@ -134,30 +169,27 @@ export default function Capabilities() {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3'>
                 <div className='grid-span-auto'>
-                    <p className='mb-2 font-bold'>From Clients:</p>
+                    <p className='mb-2 font-bold'>Employees:</p>
                     <ul className='list-square list-inside ms-7'>
-                        <li>3DiF is easy to work with...</li>
-                        <li>3DiF employees are accountable and productive...</li>
-                        <li>We love working with 3DiF</li>
-                        <li>We value our shared joint servant / transformation company ETHOS...</li>
+                        <li>“The company is super supportive and focused on my growth at the company.”</li>
+                        <li>“I have very much enjoyed working for 3DiF this past year &amp; feel so thankful to be a part of the 3DiF family. It has been one of the most enjoyable work years that I have had &amp; love the team texts we receive throughout the year. It&apos;s very uplifting and always puts a smile on my face. I think team bonding &amp; communication is a very big part of a happy work life. Working remotely, you don&apos;t always get that, but with 3DiF it has been great keeping the team positive &amp; connected.”</li>
                     </ul>
                 </div>
                 <div className='grid-span-2'>
                     <Image src="/images/fleur_de_lis.jpg" alt="" width={200} height={50} className='mx-auto' />
                 </div>
                 <div className='grid-span-auto'>
-                    <p className='mb-2 font-bold'>From Employees:</p>
+                    <p className='mb-2 font-bold'>Our Government &amp; Prime Customers:</p>
                     <ul className='list-square list-inside ms-7'>
-                        <li>My co-workers &amp; the nurturing manner in which the company handles its employees.</li>
-                        <li>The opportunity to upskill and grow</li>
-                        <li>How valued the Employees are in the company</li>
-                        <li>Becoming a better version of self...</li>
+                        <li>“We love working with 3DiF.”</li>
+                        <li>“Easy to work with. Leadership is readily available.”</li>
+                        <li>“3DiF Employees are productive, accountable, adaptable and flexible.”</li>
                     </ul>
                 </div>
             </div>
             <span className='mt-2 flex justify-center text-center'>
                 <span>
-                    <b>A team is not a div of people who work together. A team is a div of people who trust each other.</b> - <i>Simon Sinek</i>
+                    <b>A team is not a group of people who work together. A team is a group of people who trust each other.</b> - <i>Simon Sinek</i>
                 </span>
             </span>
         </div>

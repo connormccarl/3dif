@@ -15,7 +15,7 @@ const Footer = () => {
                 <h4 className="font-semibold uppercase">Contact Us</h4>
 
                 <div className="mt-3 grid space-y-1 text-neutral-400 text-base">
-                    <p>Phone: 571.341.5060</p>
+                    <p>Phone: 571.246.5489</p>
                     <p>Email: info@3dif.co</p>
                     <br />
                     <p>Principal Address</p>
@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-5 mt-5 border-t border-white flex justify-center text-xs">
-            Copyright &copy; {new Date().getFullYear()} 3DiF All Rights Reserved
+            Copyright &copy; {new Date(Date.now()).getFullYear()} 3DiF All Rights Reserved
         </div>
     </footer>
   )

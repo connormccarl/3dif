@@ -306,15 +306,15 @@ const ContactUs = () => {
           </div>
           <div className='my-3'>
             <div className='text-[#002060] font-bold'>
-              Phone Number
+              Voice Phone
             </div>
             <div className='mt-1'>
-              571.341.5060
+              571.246.5489
             </div>
           </div>
           <div className='my-3'>
             <div className='text-[#002060] font-bold'>
-              Email
+              Primary Contact
             </div>
             <div className='mt-1'>
               info@3dif.co
