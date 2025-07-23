@@ -11,12 +11,13 @@ export default function Capabilities() {
                 <Image src="/images/3DiF-RightTri.png" alt="" width={310} height={115} className='h-full w-auto' />
             </span>
             <div className='md:pt-1'>
-                <div className='flex-row float-start gap-2 hidden md:flex'>
-                        <Image src="/images/certs/SDB_Self_Certified.png" alt="" width={75} height={40} />
+                <div className='flex-row float-start gap-2 flex'>
+                        <Image className="hidden lg:flex" src="/images/certs/SDB_Self_Certified.png" alt="" width={75} height={40} />
                         {/*<Image src="/images/certs/HUBZone_Certified.png" alt="" width={75} height={90}  />*/}
-                        <Image src="/images/certs/8a_Certified.png" alt="" width={75} height={90}  />
-                        <Image src="/images/certs/WOSB_Certified.png" alt="" width={75} height={90}  />
-                        <Image src="/images/SDVOSB-CVE-white-circle.png" alt="" width={100} height={80}  />
+                        <Image className="hidden lg:flex" src="/images/certs/8a_Certified.png" alt="" width={75} height={90}  />
+                        <Image className="hidden lg:flex" src="/images/certs/WOSB_Certified.png" alt="" width={75} height={90}  />
+                        <Image className="hidden lg:flex" src="/images/SDVOSB-CVE-white-circle.png" alt="" width={100} height={80}  />
+                        <Image className="align-top h-9 pt-1 md:pt-0" src="/images/awards/gsa.png" alt="" width={150} height={45}  />
                 </div>
                 <div className='float-end text-white text-sm pr-2'>
                     <p>CAGE Code: 6E8B8<br />
@@ -61,14 +62,14 @@ export default function Capabilities() {
             <div className='flex justify-center'>
                 <p className='sectionTitle mb-2'>Core Competencies</p>
             </div>
-            <p>
+            <div>
                 <ul className='list-square list-inside ms-6'>
                     <li>Human Capital Operation Support Services</li>
                     <li>Talent Acquisition including Hiring &amp; Recruiting</li>
                     <li>Administrative, Technical and Technology Enabled Support Services</li>
                     <li>Back Office, Customer Service, Program Management Support Services</li>
                 </ul>
-            </p>
+            </div>
         </div>
         <div className=''>
             <div className='flex justify-center'>
