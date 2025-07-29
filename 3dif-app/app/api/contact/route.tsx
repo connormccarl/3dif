@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
 
           await sendEmail(options);
 
-        return NextResponse.json({ message: "Successs. Email was sent!"});
+        return NextResponse.json({ message: "Success. Email was sent!"});
     } catch (error) {
         console.log(error);
         const message = "Error. Could not send message.\n\n" + error;
