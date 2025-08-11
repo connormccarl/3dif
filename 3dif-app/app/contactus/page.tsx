@@ -42,6 +42,24 @@ const ContactUs = () => {
     setInterest([]);
     setMessage('');
   }
+
+  const handlePhoneNumber = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = e.target.value.replace(/\D/g, ""); // Remove non-digits
+
+    let formattedNumber = "";
+
+    if (inputValue.length > 0) {
+      formattedNumber = `(${inputValue.slice(0, 3)}`;
+    }
+    if (inputValue.length > 3) {
+      formattedNumber += `) ${inputValue.slice(3, 6)}`;
+    }
+    if (inputValue.length > 6) {
+      formattedNumber += `-${inputValue.slice(6, 10)}`;
+    }
+
+    setPhone(formattedNumber);
+  };
   
   const onSubmit = async (e: FormEvent) => {
     setLoading(true);
@@ -201,7 +219,7 @@ const ContactUs = () => {
                     <input
                       id="phone"
                       value={phone}
-                      onChange={e => setPhone(e.target.value)}
+                      onChange={e => handlePhoneNumber(e)}
                       autoComplete="phone"
                       className="peer block w-full rounded-md border-gray-300 text-lg sm:leading-6"
                       required

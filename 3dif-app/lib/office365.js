@@ -37,7 +37,7 @@ const sendEmail = async (mail) => {
     const options = {
       method: 'POST',
       headers,
-      body: JSON.stringify({ message: mail, saveToSentItems: false }),
+      body: JSON.stringify({ message: mail, saveToSentItems: true }),
     };
 
     await fetch(
